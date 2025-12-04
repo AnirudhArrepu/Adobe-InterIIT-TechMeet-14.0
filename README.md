@@ -479,7 +479,9 @@ python mood_lens/download_dataset.py
 ```bash=
 # get the gemini api key for this step and replace the line at the top
 # of the file to caption the dataset with emotion
-python caption_dataset.py
+#
+# NOTE: run caption_dataset.ipynb
+#
 # main.py will automatically build the index for the first time & reuse it
 # for subsequent runs!
 cd .. #exit out of the pipeline directory
@@ -520,6 +522,13 @@ python detect_inference.py #for detecting if the inout image was photoshopped by
 ```bash
 # uses the docker-compose.yml
 docker compose up -d
+```
+### Website
+```bash
+# webprotoype
+cd client
+npm i
+npm start
 ```
 
 ## Appendix I - Hardware
